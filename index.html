@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f9ff">
+  <meta name="description" content="Profil profesional Didik Wijanarko, karyawan Divisi Finance di BINUS University.">
+  <title>Didik Wijanarko — Personal Profile</title>
+  <style>
+    :root { color-scheme: light; --navy:#102b50; --blue:#2364d2; --sky:#e8f1ff; --ink:#172b45; --muted:#63748b; --line:#dce6f3; --paper:#ffffff; --bg:#f5f9ff; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--bg); color:var(--ink); font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; line-height:1.65; }
+    a { color:inherit; text-decoration:none; }
+    .wrap { width:min(1100px,calc(100% - 44px)); margin:auto; }
+    header { padding:22px 0; }
+    nav { display:flex; align-items:center; justify-content:space-between; gap:24px; }
+    .brand { display:flex; align-items:center; gap:12px; font-weight:800; letter-spacing:-.03em; }
+    .monogram { display:grid; place-items:center; width:42px; height:42px; border-radius:14px; color:white; background:var(--blue); font-size:15px; box-shadow:0 8px 20px #2364d226; }
+    .navlinks { display:flex; align-items:center; gap:26px; color:var(--muted); font-size:14px; }
+    .navlinks a:hover { color:var(--blue); }
+    .hero { padding:76px 0 78px; display:grid; grid-template-columns:1.2fr .8fr; align-items:center; gap:56px; }
+    .eyebrow { display:inline-flex; align-items:center; gap:9px; color:var(--blue); background:var(--sky); border:1px solid #d5e5ff; padding:7px 12px; border-radius:999px; font-size:12px; font-weight:750; letter-spacing:.08em; text-transform:uppercase; }
+    .dot { width:7px; height:7px; border-radius:50%; background:#2b9c72; }
+    h1 { margin:22px 0 18px; color:var(--navy); font-size:clamp(42px,6vw,70px); line-height:1.06; letter-spacing:-.065em; font-weight:800; }
+    h1 span { color:var(--blue); }
+    .intro { max-width:600px; font-size:18px; color:var(--muted); margin:0 0 28px; }
+    .actions { display:flex; flex-wrap:wrap; gap:12px; }
+    .btn { display:inline-flex; justify-content:center; align-items:center; gap:9px; padding:12px 18px; border-radius:12px; font-weight:700; font-size:14px; transition:transform .2s,background .2s; }
+    .btn:hover { transform:translateY(-2px); }
+    .primary { background:var(--blue); color:white; box-shadow:0 9px 22px #2364d226; }
+    .secondary { border:1px solid var(--line); background:white; color:var(--navy); }
+    .visual { min-height:370px; position:relative; display:grid; place-items:center; }
+    .orb { width:min(330px,78vw); aspect-ratio:1; border-radius:42% 58% 61% 39% / 43% 41% 59% 57%; background:linear-gradient(145deg,#d9e9ff,#a9ccff); position:relative; display:grid; place-items:center; transform:rotate(-7deg); }
+    .orb:before { content:""; position:absolute; inset:20px; border:1px solid #ffffffb8; border-radius:inherit; }
+    .initials { transform:rotate(7deg); color:var(--navy); font-size:104px; font-weight:850; letter-spacing:-.1em; }
+    .float-card { position:absolute; padding:14px 17px; border:1px solid #e3ebf7; background:#ffffffed; backdrop-filter:blur(10px); border-radius:16px; box-shadow:0 14px 38px #1d47700f; }
+    .float-card strong { display:block; color:var(--navy); font-size:13px; }
+    .float-card small { color:var(--muted); font-size:12px; }
+    .fc-top { top:36px; right:-2px; } .fc-bottom { bottom:38px; left:-8px; }
+    section { padding:58px 0; }
+    .section-head { max-width:630px; margin-bottom:28px; }
+    .kicker { color:var(--blue); font-size:12px; text-transform:uppercase; letter-spacing:.12em; font-weight:800; }
+    h2 { margin:8px 0 12px; color:var(--navy); font-size:clamp(28px,4vw,40px); line-height:1.2; letter-spacing:-.045em; }
+    .section-head p,.about-copy { color:var(--muted); margin:0; }
+    .about-grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+    .panel { background:var(--paper); border:1px solid var(--line); border-radius:22px; padding:28px; }
+    .panel h3 { margin:0 0 10px; color:var(--navy); font-size:18px; }
+    .panel p { color:var(--muted); margin:0; }
+    .pill-row { display:flex; flex-wrap:wrap; gap:9px; margin-top:20px; }
+    .pill { padding:7px 11px; border-radius:9px; background:var(--sky); color:#2457a5; font-size:12px; font-weight:700; }
+    .work-card { display:flex; gap:18px; align-items:flex-start; }
+    .work-icon { flex:0 0 48px; height:48px; border-radius:15px; display:grid; place-items:center; background:var(--sky); color:var(--blue); }
+    .work-card h3 { margin:0 0 4px; }
+    .work-card .sub { color:var(--blue); font-weight:700; font-size:13px; margin-bottom:10px; }
+    .note { margin-top:18px; font-size:13px; color:var(--muted); }
+    .contact { background:var(--navy); color:white; border-radius:28px; padding:clamp(28px,5vw,54px); display:flex; align-items:center; justify-content:space-between; gap:28px; }
+    .contact h2 { color:white; max-width:500px; }
+    .contact p { color:#c5d5eb; max-width:540px; margin:0; }
+    .contact .btn { background:white; color:var(--navy); white-space:nowrap; }
+    footer { padding:26px 0 34px; color:var(--muted); font-size:12px; }
+    .footer-row { display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap; border-top:1px solid var(--line); padding-top:20px; }
+    @media (max-width:760px) { .hero { grid-template-columns:1fr; padding:52px 0 48px; gap:12px; } .visual { min-height:300px; order:-1; } .orb { width:250px; } .initials { font-size:78px; } .fc-top { right:4px; top:12px; } .fc-bottom { left:0; bottom:15px; } .about-grid { grid-template-columns:1fr; } .navlinks { gap:14px; font-size:12px; } .brand-label { display:none; } .contact { align-items:flex-start; flex-direction:column; } }
+    @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *,*:before,*:after { transition:none !important; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav aria-label="Navigasi utama">
+        <a class="brand" href="#home" aria-label="Didik Wijanarko, beranda"><span class="monogram">DW</span><span class="brand-label">Didik Wijanarko</span></a>
+        <div class="navlinks"><a href="#tentang">Tentang</a><a href="#profesional">Profesional</a><a href="#kontak">Kontak</a></div>
+      </nav>
+    </div>
+  </header>
+  <main id="home">
+    <div class="wrap hero">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> Personal profile</div>
+        <h1>Halo, saya<br><span>Didik Wijanarko.</span></h1>
+        <p class="intro">Profesional di bidang keuangan yang menjadi bagian dari Divisi Finance di BINUS University. Saya menghargai ketelitian, tanggung jawab, dan proses kerja yang terstruktur.</p>
+        <div class="actions"><a class="btn primary" href="#tentang">Kenali saya <span aria-hidden="true">↘</span></a><a class="btn secondary" href="https://github.com/didikwija" target="_blank" rel="noopener noreferrer">Lihat GitHub ↗</a></div>
+      </div>
+      <div class="visual" aria-label="Monogram Didik Wijanarko">
+        <div class="orb"><div class="initials">DW</div></div>
+        <div class="float-card fc-top"><strong>Finance</strong><small>Professional focus</small></div>
+        <div class="float-card fc-bottom"><strong>Terus bertumbuh</strong><small>Belajar · Berkolaborasi · Berkembang</small></div>
+      </div>
+    </div>
+    <section id="tentang">
+      <div class="wrap">
+        <div class="section-head"><div class="kicker">Tentang saya</div><h2>Profesional dengan pendekatan yang cermat.</h2><p>Ruang singkat untuk mengenal latar profesional dan nilai yang saya bawa dalam pekerjaan sehari-hari.</p></div>
+        <div class="about-grid">
+          <article class="panel"><h3>Profil singkat</h3><p class="about-copy">Nama saya Didik Wijanarko. Saya bekerja di Divisi Finance BINUS University dan tertarik membangun cara kerja yang rapi, akurat, serta dapat diandalkan. Saya percaya proses yang baik dimulai dari perhatian pada detail dan kemauan untuk terus belajar.</p></article>
+          <article class="panel"><h3>Nilai yang saya pegang</h3><p class="about-copy">Integritas, ketelitian, kolaborasi, dan pengembangan diri adalah prinsip yang ingin saya bawa dalam lingkungan profesional.</p><div class="pill-row"><span class="pill">Ketelitian</span><span class="pill">Integritas</span><span class="pill">Kolaborasi</span><span class="pill">Continuous learning</span></div></article>
+        </div>
+      </div>
+    </section>
+    <section id="profesional">
+      <div class="wrap">
+        <div class="section-head"><div class="kicker">Profesional</div><h2>Pengalaman di lingkungan pendidikan.</h2><p>Berfokus pada peran yang telah saya bagikan, tanpa menambahkan riwayat atau pencapaian yang belum terverifikasi.</p></div>
+        <article class="panel work-card">
+          <div class="work-icon" aria-hidden="true"><svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V4h8v3M3 12h18M10 12v2h4v-2"/></svg></div>
+          <div><h3>Divisi Finance</h3><div class="sub">BINUS University · Keuangan</div><p class="about-copy">Menjadi bagian dari tim Finance di lingkungan BINUS University. Peran ini saya tempatkan sebagai bagian dari dukungan terhadap proses keuangan dan operasional institusi pendidikan.</p></div>
+        </article>
+        <p class="note">Catatan: deskripsi di atas merupakan ringkasan umum berdasarkan informasi yang tersedia, bukan daftar tanggung jawab resmi.</p>
+      </div>
+    </section>
+    <section id="kontak">
+      <div class="wrap">
+        <div class="contact"><div><div class="kicker" style="color:#9fc3ff">Mari terhubung</div><h2>Terbuka untuk koneksi profesional.</h2><p>Silakan kunjungi GitHub saya untuk melihat profil dan aktivitas yang saya bagikan secara publik.</p></div><a class="btn" href="https://github.com/didikwija" target="_blank" rel="noopener noreferrer">Kunjungi GitHub ↗</a></div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap footer-row"><span>© <span id="year">2026</span> Didik Wijanarko</span><span>Dibuat dengan sederhana, fokus pada hal yang penting.</span></div></footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
